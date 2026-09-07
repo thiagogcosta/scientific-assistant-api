@@ -1,5 +1,5 @@
 # scientific-assistant-api
-[![Version](https://img.shields.io/badge/version-1.0.1-gray)](https://github.com/thiagogcosta/scientific-assistant-api/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2-gray)](https://github.com/thiagogcosta/scientific-assistant-api/releases)
 [![Docker](https://img.shields.io/badge/Docker-808080?logo=docker&logoColor=2496ED)](https://hub.docker.com/r/thiagogcosta/scientific-assistant-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
