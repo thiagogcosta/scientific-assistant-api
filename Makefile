@@ -1,5 +1,7 @@
 .PHONY : local-start, build, start, end, clear, clear_all, lock, quality, tests
 
+install_bump2version:
+	@python3 -m pip install bump2version
 local-start:
 	@python3 -m pip install -q poetry==1.8.3
 	@poetry install --only main
@@ -48,3 +50,18 @@ tests:
 	@echo "Starting the tests process..."
 	@poetry install --with dev
 	@poetry run pytest --cov=tests --cov-fail-under=70
+
+# Bump major version
+bump_major: install_bump2version
+	@echo "Bumping major version..."
+	@bump2version major
+
+# Bump minor version
+bump_minor: install_bump2version
+	@echo "Bumping minor version..."
+	@bump2version minor
+
+# Bump patch version
+bump_patch: install_bump2version
+	@echo "Bumping patch version..."
+	@bump2version patch
